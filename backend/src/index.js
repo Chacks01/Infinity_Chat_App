@@ -13,7 +13,9 @@ dotenv.config();
 const PORT = process.env.PORT;
 const __dirname = path.resolve();
 
-app.use(express.json());
+app.get("/", (req, res)=> {
+  res.send("hello chakawuya")})
+  app.use(express())
 app.use(cookieParser());
 app.use(
   cors({
